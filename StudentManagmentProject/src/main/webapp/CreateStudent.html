@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="createstudent">
+      <h2 class="heading">Add Student Data</h2>
+      <form action="studentdata">
+        <li>Student Name</li>
+        <input type="text" name="name" placeholder="Student Name" required />
+        <li>Student Email</li>
+        <input type="email" name="email" placeholder="Student Email" required />
+        <li>Year of Passing</li>
+        <input type="date" name="yop" placeholder="Year of Passing" required />
+        <li>Student Gender</li>
+        <input type="radio" name="gender" value="male" required />Male
+        <input type="radio" name="gender" value="female" required />Female
+        <input type="radio" name="gender" value="other" required />Other
+        <br />
+        <li>Student Branch</li>
+        <select name="branch" id="branch">
+          <option>Select Branch</option>
+          <option value="mechanical">Mechanical Engineering</option>
+          <option value="civil">Civil Engineering</option>
+          <option value="electical">Electrical Engineering</option>
+          <option value="chemical">chemical Engineering</option>
+          <option value="computer">Computer Engineering</option>
+        </select>
+        <br /><br />
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>
